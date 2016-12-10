@@ -1,0 +1,6 @@
+<h3>Available Ice Creams</h3>
+<div ng-repeat="icecream in view.icecreams">
+<text>{{icecream.flavor}}</text>
+<a href="/{{icecream._id}}/delete">Delete</a>
+<a href="/{{icecream._id}}/edit">Edit</a>
+</div>
