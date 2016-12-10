@@ -6,5 +6,8 @@ app.factory('icecreamService', function ($http, $location, $routeParams) {
     all: function () {
       return $http.get('/api/icecreams');
     },
+    one: function () {
+      return $http.get($routeParams.icecreamId + '/edit/')
+    }
   }
 })

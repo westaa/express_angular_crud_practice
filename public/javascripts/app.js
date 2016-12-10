@@ -10,4 +10,8 @@ app.config(function($routeProvider) {
     templateUrl: '../views/new.html',
     controller: 'icecreamController'
   })
+  .when('/:icecreamId/edit', {
+    templateUrl: '../views/edit.html',
+    controller: 'icecreamController'
+  })
 })

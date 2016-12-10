@@ -12,3 +12,17 @@ body h3{
 a {
   color: #00B7FF;
 }
+.icecreams {
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+}
+.icecreams text {
+  width: 24.25%;
+  text-align: center;
+}
+.icecreams text h4 {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}

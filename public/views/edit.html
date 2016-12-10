@@ -1,0 +1,7 @@
+<div ng-repeat="icecream in view.oneIcecream">
+  <form ng-submit='view.update(icecream)'>
+    <input type="text" value="{{icecream.flavor}}" ng-model='icecream.flavor'>
+    <input type="text" value="{{icecream.review}}" ng-model='icecream.review'>
+    <input type="submit" value="Update Ice Cream">
+  </form>
+</div>

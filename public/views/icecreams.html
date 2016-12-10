@@ -1,6 +1,15 @@
 <h3>Available Ice Creams</h3>
-<div ng-repeat="icecream in view.icecreams">
+
+<div class="icecreams">
+  <text><h4>Flavor</h4></text>
+  <text><h4>Review</h4></text>
+  <text><h4>Edit</h4></text>
+  <text><h4>Delete</h4></text>
+</div>
+<div class="icecreams" ng-repeat="icecream in view.icecreams">
 <text>{{icecream.flavor}}</text>
-<a href="/{{icecream._id}}/delete">Delete</a>
-<a href="/{{icecream._id}}/edit">Edit</a>
+<text>{{icecream.review}}</text>
+<text><a ng-href="/#/{{icecream._id}}/edit">Edit</a>
+</text>
+<text><a href="/{{icecream._id}}/delete">Delete</a></text>
 </div>
