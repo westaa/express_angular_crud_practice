@@ -12,6 +12,7 @@ router.get('/api/icecreams', function(req, res, next) {
 
 router.post('/api/icecreams', function(req, res, next) {
   icecreams.insert({flavor: req.body.flavor, review: req.body.review, image_url: req.body.image_url});
+  res.send('Ice Cream Created!');
   res.redirect('/')
 })
 
