@@ -1,6 +1,9 @@
-  <h1>Add Ice Cream to Database</h1>
+
+    <h3><a href="/#/">Home</a></h3>
+    <h1>Add Ice Cream to Database</h1>
   <form action='/api/icecreams' method="post">
     <input type="text" ng-model="view.flavor" placeholder="flavor" name=flavor>
     <input type="text" ng-model="view.review" placeholder="review" name=review>
+    <input type="text" placeholder="image url" ng-model='view.image_url' name='image_url'>
     <input type="submit" value='Add Ice Cream!'>
   </form>

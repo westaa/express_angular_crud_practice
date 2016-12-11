@@ -11,7 +11,7 @@ router.get('/api/icecreams', function(req, res, next) {
 });
 
 router.post('/api/icecreams', function(req, res, next) {
-  icecreams.insert({flavor: req.body.flavor, review: req.body.review});
+  icecreams.insert({flavor: req.body.flavor, review: req.body.review, image_url: req.body.image_url});
   res.redirect('/')
 })
 
@@ -27,7 +27,7 @@ router.get('/:id/edit', function(req, res, next) {
 })
 
 router.post('/api/icecreams/:id', function(req,res,next){
-  icecreams.update({_id: req.params.id}, {$set: {flavor: req.body.flavor, review: req.body.review}});
+  icecreams.update({_id: req.params.id}, {$set: {flavor: req.body.flavor, review: req.body.review, image_url: req.body.image_url}});
   res.redirect('/');
 })
 

@@ -20,6 +20,20 @@ a {
 .icecreams text {
   width: 24.25%;
   text-align: center;
+  font-size:1.4em;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.icecreams div {
+  width: 24.25%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.icecreams div img {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
 }
 .icecreams text h4 {
   border-style: solid;
